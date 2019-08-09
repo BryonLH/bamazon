@@ -9,17 +9,9 @@ var connection = mysql.createConnection({
     database: 'bamazon'
 });
 
-function displayProducts() {
-    connection.query("SELECT item_id, product_name, price FROM products", function (err, res) {
-        if (err) throw err;
-        res.forEach(products => {
-            console.log(`Item ID: ${products.item_id} | Product Name: ${products.product_name} | Price: ${products.price}`);
-        });
-        // console.log(res);
-    });
-}
+
 function inquirerFunction() {
-    displayProducts()
+    displayProducts();
     inquirer
         .prompt([
             // Here we create a basic text prompt.
@@ -30,13 +22,24 @@ function inquirerFunction() {
             },
             {
                 type: "number",
-                message: "How many would like to purchase?",
+                message: "How many would you like to purchase?",
                 name: "quantity"
             }
         ])
+        .then(function(res) {
+            console.log(`Item: ${res.itemPurchased} and quantity of ${res.quantity}`)
+        })
 };
 
-
+function displayProducts() {
+    connection.query("SELECT item_id, product_name, price FROM products", function (err, res) {
+        if (err) throw err;
+        res.forEach(products => {
+            console.log(`Item ID: ${products.item_id} | Product Name: ${products.product_name} | Price: ${products.price}`);
+        });
+        // console.log(res);
+    });
+}
 
 
 connection.connect(function (err) {
