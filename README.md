@@ -6,7 +6,7 @@ This Application uses Node.js, Inquirer and MySQL to present users with some act
 This application has 2 options to run.  Running bamazonCustomer will let the user order items and have the database updated to reflect the order.  Running bamazonManager will present the user with 4 options that will query, update or insert into the database.
 
 ### Instructions for using bamazonCustomer
-Upon running bamazonCustomer, the user is shown the products in the database and asked to enter the item ID of the item they would like to purchase.  After making their selections, the order total is shown the user and quantity ordered is reomved from the stock quantity in the database.
+Upon running bamazonCustomer, the user is shown the products in the database and asked to enter the item ID of the item they would like to purchase.  After making their selection, the order total is shown to the user and quantity ordered is removed from the stock quantity in the database.
 ![bamazonCustomer Screenshot](.\assets\images\screenshots\bamazonCustomer.jpg)
 
 ### Instructions for using bamazonManager
