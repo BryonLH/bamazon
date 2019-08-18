@@ -42,7 +42,7 @@ var inquirerFunction = function() {
 };
 
 
-
+// function to display products and let user purchase one
 function queryAndUpdateProduct(itemPurchased, quantity) {
     connection.query("SELECT * FROM products WHERE item_id = ?", [itemPurchased], function (err, res) {
         if (err) throw err;
@@ -58,8 +58,8 @@ function queryAndUpdateProduct(itemPurchased, quantity) {
         connection.query("UPDATE products SET stock_quantity = ? WHERE item_id = ?", [updatedQuantity, itemPurchased], function (err) {
             if (err) throw err;
         })
-    })
-}
+    });
+};
 
 
 connection.connect(function (err) {
