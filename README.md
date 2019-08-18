@@ -16,9 +16,10 @@ Upon running bamazonManager, the user is presented with 4 options.
 ![bamazonManager View Products for Sale Screenshot](./assets/imagess/creenshotscts that have a srtock quantity of 5 or below.
 ![bamazonManager View Low Inventory Screenshot](./assets/images/screenshots/bamazonManager-view-low-inventory.jpg)
 * Add to Inventory - This will ask the the user to select an item ID and then enter an amount to add to the current stock available.
-![bamazonManager Add New Product Screenshot](./assets/images/screenshots/bamazonManager-add-stock.jpg)\bamazonManager-view-products.jpg)
-* View Low Inventory - This will query the database and present a list of produ
-* Add New Product - This will ask the user to the enter a Product Name, Product Department, Price and Stock Quantity.  Data entered will then be inserted into the database.
+![bamazonManager Add New Product Screenshot](./assets/images/screenshots/bamazonManager-add-stock.jpg)
+* View Low Inventory - This will query the database and present a list of products where the stock quantity is 5 or below.
+![bamazonManager Add New Product Screenshot](./assets/images/screenshots/bamazonManager-view-low-inventory.jpg)
+* Add New Product - This will ask the user to enter a Product Name, Product Department, Price and Stock Quantity.  Data entered will then be inserted into the database.
 ![bamazonManager Add New Product Screenshot](./assets/images/screenshots/bamazonManager-add-product.jpg)
 
 ### Technologies used
